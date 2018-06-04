@@ -10,5 +10,8 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-
+  
+  openLogin() {
+    this.navCtrl.push('LoginPage');
+  }
 }

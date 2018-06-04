@@ -6,6 +6,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+import { AdmincontentPage } from '../pages/admincontent/admincontent';
+import { PasswordresetPage } from '../pages/passwordreset/passwordreset';
+import { UserdetailsPage } from '../pages/userdetails/userdetails';
+import firebase from 'firebase';
+import { AuthProvider } from '../providers/auth/auth';
+import { ChatProvider } from '../providers/chat/chat';
 
 @NgModule({
   declarations: [
@@ -24,7 +32,9 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthProvider,
+    ChatProvider
   ]
 })
 export class AppModule {}
