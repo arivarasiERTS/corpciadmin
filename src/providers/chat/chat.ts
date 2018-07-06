@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import firebase from 'firebase';
+import { Events, AlertController } from 'ionic-angular';
 
 /*
   Generated class for the ChatProvider provider.
@@ -10,15 +11,7 @@ import firebase from 'firebase';
 @Injectable()
 export class ChatProvider {
   firedata = firebase.database().ref('/requests');
-selected;
-reqmsg;
-nameg;
-phoneg;
-selg;
-msgg;
-rating;
-  constructor() {  
+  constructor(public events: Events, public alertCtrl: AlertController) {  
   }
-
 
 }

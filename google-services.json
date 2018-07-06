@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "698477895883",
+    "firebase_url": "https://corpcareitsolutions.firebaseio.com",
+    "project_id": "corpcareitsolutions",
+    "storage_bucket": "corpcareitsolutions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698477895883:android:1869af1f9eea2f77",
+        "android_client_info": {
+          "package_name": "com.joe.corpciadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698477895883-17pu6ol7fv3260l86i8ntmlv7j8b1mou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGh4XjO-hqYG--IVviN0qgVRKqxfill1o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

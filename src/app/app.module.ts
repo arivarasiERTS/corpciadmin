@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { FCM } from '@ionic-native/fcm';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -11,6 +12,7 @@ import { SignupPage } from '../pages/signup/signup';
 import { AdmincontentPage } from '../pages/admincontent/admincontent';
 import { PasswordresetPage } from '../pages/passwordreset/passwordreset';
 import { UserdetailsPage } from '../pages/userdetails/userdetails';
+import { SratingPage } from '../pages/srating/srating';
 import firebase from 'firebase';
 import { AuthProvider } from '../providers/auth/auth';
 import { ChatProvider } from '../providers/chat/chat';
@@ -30,6 +32,7 @@ import { ChatProvider } from '../providers/chat/chat';
     HomePage
   ],
   providers: [
+    FCM,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
